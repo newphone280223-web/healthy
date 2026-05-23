@@ -5,7 +5,7 @@ import json
 
 class GeminiScanner:
     def __init__(self):
-        self.client = genai.Client()
+        self.client = genai.GenerativeModel()
     
     def scan_product_image(self, image_path):
         img = Image.open(image_path)
